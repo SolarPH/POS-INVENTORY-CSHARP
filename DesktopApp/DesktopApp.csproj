@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C009A53-7758-43B5-AAE5-2DB0C60B1842}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DesktopApp</RootNamespace>
+    <AssemblyName>DesktopApp</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicForms\CashierClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\CashierClient.Designer.cs">
+      <DependentUpon>CashierClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\ConfirmWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\ConfirmWindow.Designer.cs">
+      <DependentUpon>ConfirmWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\InventoryMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\InventoryMain.Designer.cs">
+      <DependentUpon>InventoryMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\PaymentWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\PaymentWindow.Designer.cs">
+      <DependentUpon>PaymentWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseManager\MainDatabase.cs" />
+    <Compile Include="Functions\Calculator.cs" />
+    <Compile Include="Functions\Inventory.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Pop-ups\Alert_AlreadyRegistered.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pop-ups\Alert_AlreadyRegistered.Designer.cs">
+      <DependentUpon>Alert_AlreadyRegistered.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pop-ups\Alert_ItemNotFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pop-ups\Alert_ItemNotFound.Designer.cs">
+      <DependentUpon>Alert_ItemNotFound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pop-ups\ViewStockUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pop-ups\ViewStockUpdate.Designer.cs">
+      <DependentUpon>ViewStockUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="TextBoxManager\DoubleOnly.cs" />
+    <Compile Include="TextBoxManager\IntegerOnly.cs" />
+    <EmbeddedResource Include="BasicForms\CashierClient.resx">
+      <DependentUpon>CashierClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\ConfirmWindow.resx">
+      <DependentUpon>ConfirmWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\InventoryMain.resx">
+      <DependentUpon>InventoryMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\PaymentWindow.resx">
+      <DependentUpon>PaymentWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pop-ups\Alert_AlreadyRegistered.resx">
+      <DependentUpon>Alert_AlreadyRegistered.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pop-ups\Alert_ItemNotFound.resx">
+      <DependentUpon>Alert_ItemNotFound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pop-ups\ViewStockUpdate.resx">
+      <DependentUpon>ViewStockUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

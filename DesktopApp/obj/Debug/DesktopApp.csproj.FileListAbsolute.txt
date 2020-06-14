@@ -1,0 +1,29 @@
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\bin\Debug\DesktopApp.exe.config
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\bin\Debug\DesktopApp.exe
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\bin\Debug\DesktopApp.pdb
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csprojAssemblyReference.cache
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.MainWindow.resources
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Properties.Resources.resources
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csproj.GenerateResource.cache
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csproj.CoreCompileInputs.cache
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.exe
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.pdb
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Forms.CashierClient.resources
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Forms.InventoryClient.resources
+C:\SD Backup 2\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Forms.PaymentWindow.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\bin\Debug\DesktopApp.exe.config
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\bin\Debug\DesktopApp.exe
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\bin\Debug\DesktopApp.pdb
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Forms.CashierClient.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.BasicForms.ConfirmWindow.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Forms.InventoryClient.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.MainWindow.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Forms.PaymentWindow.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Pop_ups.Alert_AlreadyRegistered.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Pop_ups.Alert_ItemNotFound.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Pop_ups.ViewStockUpdate.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Properties.Resources.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csproj.GenerateResource.cache
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csproj.CoreCompileInputs.cache
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.exe
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.pdb
