@@ -21,14 +21,24 @@ namespace DesktopApp.Functions
             return change;
         }
 
-        public void UpdateTotal(TableLayoutPanel table,int index, Label label)
+        public void UpdateTotal(DataGridView table,int index, Label label)
         {
             double total = 0.00;
-            for (int i = 1; i < table.RowCount; i++)
+            for (int i = 0; i < table.RowCount; i++)
             {
-                total = total + Convert.ToDouble(table.GetControlFromPosition(index, i).Text);
+                total = total + Convert.ToDouble(table.Rows[i].Cells[4].Value.ToString());
             }
             label.Text = String.Format("{0:0.00}", total);
+        }
+
+        public double UpdateTotal(DataGridView table, int index)
+        {
+            double total = 0.00;
+            for (int i = 0; i < table.RowCount; i++)
+            {
+                total = total + Convert.ToDouble(table.Rows[i].Cells[4].Value.ToString());
+            }
+            return total;
         }
 
         public double UpdatePayment(Label label1, Label label2)

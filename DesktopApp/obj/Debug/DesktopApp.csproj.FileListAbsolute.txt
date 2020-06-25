@@ -27,3 +27,12 @@ C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csproj.GenerateReso
 C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csproj.CoreCompileInputs.cache
 C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.exe
 C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.pdb
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.csprojAssemblyReference.cache
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.BasicForms.ReceiptWindow.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.BasicForms.LoginForm.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Pop_ups.Alert_ProfileNotFound.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.BasicForms.RegisterForm.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.Pop_ups.Alert_InsufficientFunds.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.BasicForms.DiscountPicker.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.BasicForms.DiscountsForm.resources
+C:\MJ_REM\PointOfSaleProgram\DesktopApp\obj\Debug\DesktopApp.BasicForms.ProductList.resources
