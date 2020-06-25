@@ -1,4 +1,6 @@
-﻿using DesktopApp.DatabaseManager;
+﻿using DesktopApp.BasicForms;
+using DesktopApp.DatabaseManager;
+using DesktopApp.Functions;
 using DesktopApp.Pop_ups;
 using DesktopApp.TextBoxManager;
 using System;
@@ -11,7 +13,7 @@ namespace DesktopApp.Forms
         public InventoryClient()
         {
             InitializeComponent();
-            textBox1.Enabled = false;
+            textBox1.Enabled = false; button9.Enabled = false;
             textBox2.Enabled = false;
             textBox3.Enabled = false;
             textBox4.Enabled = false;
@@ -143,35 +145,14 @@ namespace DesktopApp.Forms
             aae.ShowDialog();
             Show();
         }
-
-        private Boolean checkTextBox(TextBox textbox)
-        {
-            Boolean res = false;
-            Boolean E = textbox.Enabled;
-            string T = textbox.Text;
-
-            if (E == true)
-            {
-                if (T != "")
-                {
-                    res = true;
-                }
-            }
-            else
-            {
-                res = true;
-            }
-
-            return res;
-        }
         
         private Boolean ManageCommand(string command)
         {
             Boolean status = false;
-            Boolean TB1 = checkTextBox(textBox1);
-            Boolean TB2 = checkTextBox(textBox2);
-            Boolean TB3 = checkTextBox(textBox3);
-            Boolean TB4 = checkTextBox(textBox4);
+            Boolean TB1 = new TextBoxChecker().checkTextBox(textBox1);
+            Boolean TB2 = new TextBoxChecker().checkTextBox(textBox2);
+            Boolean TB3 = new TextBoxChecker().checkTextBox(textBox3);
+            Boolean TB4 = new TextBoxChecker().checkTextBox(textBox4);
             if ((TB1 == true) && (TB2 == true) && (TB3 == true) && (TB4 == true))
             {
                 if (new MainDatabase().InteractDB_CheckMatch(Convert.ToInt32(textBox1.Text)) == true)
@@ -228,7 +209,7 @@ namespace DesktopApp.Forms
 
         private void FormRelock()
         {
-            textBox1.Enabled = false;
+            textBox1.Enabled = false; button9.Enabled = false;
             textBox2.Enabled = false;
             textBox3.Enabled = false;
             textBox4.Enabled = false;
@@ -242,7 +223,7 @@ namespace DesktopApp.Forms
             {
                 case "REGISTER": // ALL
                     FormRelock();
-                    textBox1.Enabled = true;
+                    textBox1.Enabled = true; button9.Enabled = true;
                     textBox2.Enabled = true;
                     textBox3.Enabled = true;
                     textBox4.Enabled = true;
@@ -251,7 +232,7 @@ namespace DesktopApp.Forms
                     break;
                 case "UPDATE": // ID & Price
                     FormRelock();
-                    textBox1.Enabled = true;
+                    textBox1.Enabled = true; button9.Enabled = true;
                     textBox2.Enabled = true;
                     textBox3.Enabled = true;
                     button8.Enabled = true;
@@ -260,7 +241,7 @@ namespace DesktopApp.Forms
                     break;
                 case "ADD": // ID & Quantity
                     FormRelock();
-                    textBox1.Enabled = true;
+                    textBox1.Enabled = true; button9.Enabled = true;
                     textBox4.Enabled = true;
                     button8.Enabled = true;
                     ClearBoxes(false, true, true, false);
@@ -268,7 +249,7 @@ namespace DesktopApp.Forms
                     break;
                 case "RETURN": // ID & Quantity
                     FormRelock();
-                    textBox1.Enabled = true;
+                    textBox1.Enabled = true; button9.Enabled = true;
                     textBox4.Enabled = true;
                     button8.Enabled = true;
                     ClearBoxes(false,true,true,false);
@@ -276,7 +257,7 @@ namespace DesktopApp.Forms
                     break;
                 case "REJECT": // ID & Quantity
                     FormRelock();
-                    textBox1.Enabled = true;
+                    textBox1.Enabled = true; button9.Enabled = true;
                     textBox4.Enabled = true;
                     button8.Enabled = true;
                     ClearBoxes(false,true,true,false);
@@ -284,13 +265,13 @@ namespace DesktopApp.Forms
                     break;
                 case "CHECK": // ID only
                     FormRelock();
-                    textBox1.Enabled = true;
+                    textBox1.Enabled = true; button9.Enabled = true;
                     button8.Enabled = true;
                     ClearBoxes(false, true, true, true);
                     label6.Text = "6";
                     break;
-                case "EXIT": // Close Application
-                    Application.Exit();
+                case "EXIT": // Close Window
+                    Close();
                     break;
                 default:
                     break;
@@ -362,6 +343,21 @@ namespace DesktopApp.Forms
                 // Alert Form -> Fill ID
             }
             return status;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Hide();
+            ProductList PLsource = new ProductList();
+            PLsource.ShowDialog();
+            textBox1.Text = PLsource.getSelectedID();
+            if (textBox1.Text != "")
+            {
+                string[] results = new MainDatabase().InteractDB_DisplayUpdate(Convert.ToInt32(textBox1.Text));
+                textBox2.Text = Convert.ToString(results[1]);
+                textBox3.Text = String.Format("{0:0.00}", results[2]);
+            }
+            Show();
         }
     }
 }

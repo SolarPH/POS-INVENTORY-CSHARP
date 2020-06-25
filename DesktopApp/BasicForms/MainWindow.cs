@@ -1,4 +1,6 @@
-﻿using DesktopApp.DatabaseManager;
+﻿using DesktopApp.BasicForms;
+using DesktopApp.DatabaseManager;
+using DesktopApp.Functions;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,16 +21,50 @@ namespace DesktopApp
             new MainDatabase().InitDatabase();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) // Cashier Client Window
         {
-            new Forms.CashierClient().Show();
-            this.Hide();
+            Hide();
+            LoginForm lif = new LoginForm();
+            lif.setAccessMode(1);
+            lif.ShowDialog();
+            if (lif.loginStatus() == true)
+            {
+                new Forms.CashierClient().ShowDialog();
+                new MainDatabase().InteractDB_clearCurrentSalesPerson();
+            }
+            else {}
+            Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            new Forms.InventoryClient().Show();
-            this.Hide();
+            Hide();
+            LoginForm lif = new LoginForm();
+            lif.setAccessMode(2);
+            lif.ShowDialog();
+            if (lif.loginStatus() == true)
+            {
+                new Forms.InventoryClient().ShowDialog();
+                new MainDatabase().InteractDB_clearCurrentSalesPerson();
+            }
+            else {}
+            Show();
+        }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hide();
+            LoginForm lif = new LoginForm();
+            lif.setAccessMode(3);
+            lif.ShowDialog();
+            if (lif.loginStatus() == true)
+            {
+                new DiscountsForm().ShowDialog();
+                new MainDatabase().InteractDB_clearCurrentSalesPerson();
+            }
+            else {}
+            Show();
         }
 
         private void button3_Click(object sender, EventArgs e) => Application.Exit();

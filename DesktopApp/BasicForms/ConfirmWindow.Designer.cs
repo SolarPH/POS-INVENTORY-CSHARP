@@ -59,9 +59,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(21, 65);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(353, 13);
+            this.label3.Size = new System.Drawing.Size(347, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Moving on the next transaction will nullify this transaction unless fully paid.";
+            this.label3.Text = "Moving on the next transaction will void this transaction unless fully paid.";
             // 
             // button1
             // 
