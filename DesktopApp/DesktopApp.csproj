@@ -57,11 +57,29 @@
     <Compile Include="BasicForms\ConfirmWindow.Designer.cs">
       <DependentUpon>ConfirmWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="BasicForms\DiscountPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\DiscountPicker.Designer.cs">
+      <DependentUpon>DiscountPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\DiscountsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\DiscountsForm.Designer.cs">
+      <DependentUpon>DiscountsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="BasicForms\InventoryMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BasicForms\InventoryMain.Designer.cs">
       <DependentUpon>InventoryMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="BasicForms\MainWindow.cs">
       <SubType>Form</SubType>
@@ -75,9 +93,37 @@
     <Compile Include="BasicForms\PaymentWindow.Designer.cs">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="BasicForms\ProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\ProductList.Designer.cs">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\ReceiptWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\ReceiptWindow.Designer.cs">
+      <DependentUpon>ReceiptWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicForms\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicForms\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseManager\MainDatabase.cs" />
     <Compile Include="Functions\Calculator.cs" />
     <Compile Include="Functions\Inventory.cs" />
+    <Compile Include="Functions\ORNOGEN.cs" />
+    <Compile Include="Functions\PassHash.cs" />
+    <Compile Include="Functions\TableScanner.cs" />
+    <Compile Include="Pop-ups\Alert_InsufficientFunds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pop-ups\Alert_InsufficientFunds.Designer.cs">
+      <DependentUpon>Alert_InsufficientFunds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxManager\TextBoxChecker.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Pop-ups\Alert_AlreadyRegistered.cs">
       <SubType>Form</SubType>
@@ -90,6 +136,12 @@
     </Compile>
     <Compile Include="Pop-ups\Alert_ItemNotFound.Designer.cs">
       <DependentUpon>Alert_ItemNotFound.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pop-ups\Alert_ProfileNotFound.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pop-ups\Alert_ProfileNotFound.Designer.cs">
+      <DependentUpon>Alert_ProfileNotFound.cs</DependentUpon>
     </Compile>
     <Compile Include="Pop-ups\ViewStockUpdate.cs">
       <SubType>Form</SubType>
@@ -108,8 +160,17 @@
     <EmbeddedResource Include="BasicForms\ConfirmWindow.resx">
       <DependentUpon>ConfirmWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\DiscountPicker.resx">
+      <DependentUpon>DiscountPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\DiscountsForm.resx">
+      <DependentUpon>DiscountsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BasicForms\InventoryMain.resx">
       <DependentUpon>InventoryMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BasicForms\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
@@ -117,11 +178,26 @@
     <EmbeddedResource Include="BasicForms\PaymentWindow.resx">
       <DependentUpon>PaymentWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\ProductList.resx">
+      <DependentUpon>ProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\ReceiptWindow.resx">
+      <DependentUpon>ReceiptWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicForms\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pop-ups\Alert_AlreadyRegistered.resx">
       <DependentUpon>Alert_AlreadyRegistered.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pop-ups\Alert_InsufficientFunds.resx">
+      <DependentUpon>Alert_InsufficientFunds.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pop-ups\Alert_ItemNotFound.resx">
       <DependentUpon>Alert_ItemNotFound.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pop-ups\Alert_ProfileNotFound.resx">
+      <DependentUpon>Alert_ProfileNotFound.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pop-ups\ViewStockUpdate.resx">
       <DependentUpon>ViewStockUpdate.cs</DependentUpon>
